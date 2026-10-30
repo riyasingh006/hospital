@@ -1,0 +1,223 @@
+// जीवन Sahay — Prisma schema
+// Local development uses SQLite. For production, switch the provider to
+// "postgresql" and update DATABASE_URL — no model changes are required.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String   @id @default(cuid())
+  name           String
+  email          String   @unique
+  passwordHash   String
+  role           String   @default("PATIENT") // PATIENT | HOSPITAL_ADMIN | SUPER_ADMIN
+  phone          String?
+  age            Int?
+  gender         String?
+  location       String?
+  bloodGroup     String?
+  allergies      String?
+  conditions     String?
+  medications    String?
+  emergencyName  String?
+  emergencyRel   String?
+  emergencyPhone String?
+  sharePin       String? // 6-digit code controlling access to Digital Health Profile via QR
+  status         String   @default("ACTIVE") // ACTIVE | SUSPENDED
+  hospitalId     String? // set for HOSPITAL_ADMIN users
+  hospital       Hospital? @relation(fields: [hospitalId], references: [id])
+  savedHospitals SavedHospital[]
+  searches       SearchRecord[]
+  notifications  Notification[]
+  chatSessions   ChatSession[]
+  auditLogs      AuditLog[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Hospital {
+  id                 String   @id @default(cuid())
+  name               String
+  shortName          String?
+  type               String   @default("PRIVATE") // GOVERNMENT | PRIVATE | TRUST | PSU
+  status             String   @default("PENDING_VERIFICATION") // PENDING_VERIFICATION | VERIFIED | REJECTED
+  registrationNumber String?
+  addressLine        String
+  city               String
+  state              String
+  pincode            String
+  phone              String
+  emergencyPhone     String?
+  email              String?
+  website            String?
+  lat                Float
+  lng                Float
+  about              String?
+  accreditation      String? // e.g. "NABH"
+  established        Int?
+  documentsSubmitted String   @default("[]") // JSON array of document names
+  rejectionReason    String?
+  verifiedAt         DateTime?
+  verifiedBy         String?
+  lastAvailabilityUpdate DateTime @default(now())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  beds        BedInventory[]
+  doctors     Doctor[]
+  services    Service[]
+  admins      User[]
+  dailyStats  DailyStat[]
+  savedBy     SavedHospital[]
+  reviews     Review[]
+}
+
+model BedInventory {
+  id         String   @id @default(cuid())
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  category   String // GENERAL | ICU | EMERGENCY | PEDIATRIC | MATERNITY | ISOLATION | VENTILATOR
+  total      Int
+  available  Int
+
+  @@unique([hospitalId, category])
+}
+
+model Doctor {
+  id              String   @id @default(cuid())
+  hospitalId      String
+  hospital        Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  name            String
+  specialty       String
+  department      String?
+  qualification   String?
+  experienceYears Int      @default(0)
+  availability    String   @default("AVAILABLE") // AVAILABLE | LIMITED | UNAVAILABLE
+  timings         String?
+  languages       String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Service {
+  id         String   @id @default(cuid())
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  key        String // EMERGENCY, ICU, AMBULANCE, BLOOD_BANK, PHARMACY, DIAGNOSTICS, MRI, CT_SCAN, DIALYSIS, OPERATION_THEATRE ...
+  status     String   @default("AVAILABLE") // AVAILABLE | LIMITED | UNAVAILABLE
+  details    String?
+  updatedAt  DateTime @updatedAt
+
+  @@unique([hospitalId, key])
+}
+
+model SavedHospital {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, hospitalId])
+}
+
+model SearchRecord {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  query     String
+  mode      String   @default("SEARCH") // SEARCH | EMERGENCY | AI
+  createdAt DateTime @default(now())
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  body      String
+  type      String   @default("INFO") // INFO | WARNING | SUCCESS | CRITICAL
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model DailyStat {
+  id           String   @id @default(cuid())
+  hospitalId   String
+  hospital     Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  date         DateTime
+  admissions   Int      @default(0)
+  discharges   Int      @default(0)
+  emergencyCases Int    @default(0)
+  occupancyGeneral Float @default(0) // percentage 0-100
+  occupancyIcu     Float @default(0)
+
+  @@unique([hospitalId, date])
+}
+
+model ChatSession {
+  id        String        @id @default(cuid())
+  userId    String?
+  user      User?         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String        @default("New conversation")
+  messages  ChatMessage[]
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+}
+
+model ChatMessage {
+  id        String      @id @default(cuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  role      String // USER | ASSISTANT
+  content   String
+  meta      String? // JSON payload (recommendations etc.)
+  createdAt DateTime    @default(now())
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  actorUserId String?
+  actor       User?    @relation(fields: [actorUserId], references: [id], onDelete: SetNull)
+  actorEmail  String?
+  action      String
+  entityType  String?
+  entityId    String?
+  meta        String?
+  ip          String?
+  createdAt   DateTime @default(now())
+}
+
+model Report {
+  id             String    @id @default(cuid())
+  category       String    @default("OTHER") // DATA_ISSUE | FACILITY | STAFF | BILLING | OTHER
+  subject        String
+  message        String
+  reporterName   String?
+  contactEmail   String?
+  relatedHospital String?
+  status         String    @default("OPEN") // OPEN | IN_REVIEW | RESOLVED | DISMISSED
+  resolutionNote String?
+  createdAt      DateTime  @default(now())
+  resolvedAt     DateTime?
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Cascade)
+  userId     String?  @unique
+  name       String
+  rating     Int // 1–5
+  comment    String
+  status     String   @default("PUBLISHED") // PUBLISHED | HIDDEN
+  createdAt  DateTime @default(now())
+}

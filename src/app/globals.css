@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-h: 64px;
+}
+
+/* Smooth in-page navigation for the landing page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Accessibility: text size scaling ---------- */
+html.text-md-mode {
+  font-size: 112.5%; /* 18px */
+}
+html.text-lg-mode {
+  font-size: 125%; /* 20px */
+}
+
+/* ---------- Accessibility: high contrast mode ---------- */
+html.contrast-mode {
+  --hc: 1;
+}
+html.contrast-mode body {
+  background: #ffffff;
+}
+html.contrast-mode .bg-paper {
+  background-color: #ffffff !important;
+}
+html.contrast-mode .border-ink\/10,
+html.contrast-mode .border-slate-200 {
+  border-color: #334155 !important;
+}
+html.contrast-mode .text-slate-500,
+html.contrast-mode .text-slate-600 {
+  color: #1e293b !important;
+}
+html.contrast-mode .bg-gradient-to-br,
+html.contrast-mode .bg-gradient-to-b,
+html.contrast-mode .bg-gradient-to-r {
+  background-image: none !important;
+}
+
+/* ---------- Accessibility: reduced motion ---------- */
+html.reduced-motion *,
+html.reduced-motion *::before,
+html.reduced-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+::selection {
+  background: #dce6f5;
+  color: #0e2342;
+}
+
+/* Visible, consistent focus indicators */
+:focus-visible {
+  outline: 2px solid #1d4a8c;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Thin institutional scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+  border: 2px solid #f7f8fa;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@layer components {
+  .institutional-heading {
+    @apply font-semibold tracking-tight text-primary-900;
+  }
+  .section-accent::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    background: linear-gradient(to right, #ea7a12, #12813b);
+  }
+  .data-label {
+    @apply text-[11px] font-semibold uppercase tracking-wider text-slate-500;
+  }
+  .skeleton {
+    @apply animate-shimmer rounded-md bg-slate-200/70;
+    background-image: linear-gradient(
+      90deg,
+      rgba(226, 232, 240, 0) 0,
+      rgba(226, 232, 240, 0.65) 50%,
+      rgba(226, 232, 240, 0) 100%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+/* Leaflet container sizing + institutional tweaks */
+.leaflet-container {
+  font-family: var(--font-inter), sans-serif;
+  z-index: 0;
+}
+.map-shell .leaflet-control-attribution {
+  font-size: 10px;
+}

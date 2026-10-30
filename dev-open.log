@@ -1,0 +1,171 @@
+
+> jeevan-sahay@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 15.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 25.8s (865 modules)
+ GET / 200 in 7657ms
+ GET / 200 in 32031ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 2.6s (994 modules)
+ GET /api/auth/me 200 in 3875ms
+ GET / 200 in 1791ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1253ms (1011 modules)
+ GET /login 200 in 1626ms
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 790ms (1013 modules)
+ POST /api/auth/login 200 in 1670ms
+ GET /api/auth/me 200 in 76ms
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 805ms (195 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1943ms (1108 modules)
+ GET /dashboard 200 in 2539ms
+ GET /dashboard 200 in 213ms
+ ○ Compiling /api/notifications ...
+ ✓ Compiled /api/notifications in 2.3s (1114 modules)
+ GET /api/notifications 200 in 2702ms
+ GET /api/notifications 200 in 2701ms
+ GET /api/dashboard 200 in 2721ms
+ GET /api/dashboard 200 in 2718ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 845ms (1116 modules)
+ POST /api/auth/logout 200 in 1080ms
+ GET / 200 in 559ms
+ GET / 200 in 512ms
+ GET /login 200 in 161ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 2.1s (1125 modules)
+ GET /signup?next=%2Fdashboard 200 in 2439ms
+ GET /login?next=%2Fdashboard 200 in 133ms
+ ✓ Compiled in 2.7s (407 modules)
+ GET /login?next=%2Fdashboard 200 in 219ms
+ ✓ Compiled in 946ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 151ms
+ ✓ Compiled in 926ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 188ms
+ ✓ Compiled in 1057ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 151ms
+ ✓ Compiled in 900ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 143ms
+ ✓ Compiled in 1288ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 161ms
+ ✓ Compiled in 1032ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 164ms
+ ✓ Compiled in 1224ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 176ms
+ ✓ Compiled in 933ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 174ms
+ ✓ Compiled in 1338ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 197ms
+ ✓ Compiled in 1326ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 159ms
+ ✓ Compiled in 1147ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 153ms
+ ✓ Compiled in 1315ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 177ms
+ GET /login?next=%2Fdashboard 200 in 536ms
+ ✓ Compiled in 4.1s (1205 modules)
+ GET /login?next=%2Fdashboard 200 in 740ms
+ ✓ Compiled in 1211ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 236ms
+ ✓ Compiled in 1132ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 208ms
+ GET /login?next=%2Fdashboard 200 in 832ms
+ ✓ Compiled in 4.1s (1205 modules)
+ GET /login?next=%2Fdashboard 200 in 515ms
+ ✓ Compiled in 1436ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 238ms
+ ✓ Compiled in 1187ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 265ms
+ ✓ Compiled in 1192ms (407 modules)
+ GET /login?next=%2Fdashboard 200 in 203ms
+ GET /login?next=%2Fdashboard 200 in 1120ms
+ ✓ Compiled in 3.6s (1205 modules)
+ GET /login?next=%2Fdashboard 200 in 367ms
+ ✓ Compiled in 2.4s (1010 modules)
+ GET /login?next=%2Fdashboard 200 in 722ms
+ ✓ Compiled in 1985ms (407 modules)
+ ✓ Compiled in 1190ms (407 modules)
+ ✓ Compiled in 3.2s (1010 modules)
+ ✓ Compiled in 1690ms (407 modules)
+ ✓ Compiled in 1204ms (407 modules)
+ ✓ Compiled in 1108ms (407 modules)
+ ✓ Compiled in 1617ms (407 modules)
+ ✓ Compiled in 1166ms (407 modules)
+ ✓ Compiled in 1156ms (407 modules)
+ ✓ Compiled in 1668ms (407 modules)
+ ✓ Compiled in 1174ms (407 modules)
+ ✓ Compiled in 1614ms (407 modules)
+ ✓ Compiled in 1807ms (407 modules)
+ ✓ Compiled in 970ms (407 modules)
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 2.9s (732 modules)
+ POST /api/auth/login 200 in 4281ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 1011ms (734 modules)
+ GET /api/auth/me 200 in 1376ms
+ ⨯ Error: Cannot find module './8543.js'
+Require stack:
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\webpack-runtime.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\app\api\auth\me\route.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\server\require.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\server\load-components.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\build\utils.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\build\swc\options.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\build\swc\index.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\server\config.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\server\next.js
+- C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\app\dashboard\page.js:2:17009)
+    at Object.<anonymous> (C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\app\dashboard\page.js:2:17079) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/dashboard'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 6.9s (1474 modules)
+ GET /dashboard 500 in 8347ms
+ GET /dashboard 200 in 459ms
+ GET /dashboard 200 in 989ms
+ GET /dashboard 200 in 538ms
+ GET /dashboard 200 in 612ms
+ GET /dashboard 200 in 684ms
+ GET /dashboard 200 in 653ms
+ GET /dashboard 200 in 710ms
+ GET /dashboard 200 in 719ms
+ GET /dashboard 200 in 585ms
+ GET /dashboard 200 in 750ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.5s (1248 modules)
+ GET /login?next=%2Fdashboard&reason=auth 404 in 5053ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\app\(home)\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\rs226\\OneDrive\\문서\\Desktop\\Jeevan Sahay\\.next\\server\\app\\(home)\\page.js',
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 836ms (1344 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\rs226\\OneDrive\\문서\\Desktop\\Jeevan Sahay\\.next\\server\\pages\\_document.js'
+}
+ GET / 500 in 9491ms
+ ✓ Compiled in 8.1s (1456 modules)
+ ✓ Compiled in 3.4s (1442 modules)
+ ✓ Compiled in 4.4s (1261 modules)
+ ✓ Compiled in 2.8s (1261 modules)
+ ✓ Compiled in 1519ms (559 modules)

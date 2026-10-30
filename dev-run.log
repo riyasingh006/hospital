@@ -1,0 +1,446 @@
+
+> jeevan-sahay@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 9.4s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 838ms (195 modules)
+ ○ Compiling /dashboard/hospitals ...
+ ✓ Compiled /dashboard/hospitals in 11.2s (1013 modules)
+ GET /dashboard/hospitals 200 in 5497ms
+ ○ Compiling /api/hospitals/search ...
+ ✓ Compiled /api/hospitals/search in 9.2s (1155 modules)
+ GET /api/auth/me 200 in 10913ms
+ GET /api/notifications 200 in 11058ms
+ GET /api/user/saved 200 in 10802ms
+ GET /api/hospitals/search?provider=places&lat=30.180937&lng=77.311467&maxDistance=25&limit=30 200 in 10967ms
+ ○ Compiling /dashboard/doctors ...
+ ✓ Compiled /dashboard/doctors in 4s (1168 modules)
+ GET /dashboard/doctors 200 in 4855ms
+ GET /dashboard/doctors 200 in 158ms
+ GET /dashboard/doctors 200 in 170ms
+ ○ Compiling /api/doctors ...
+ ✓ Compiled /dashboard/specialists in 2.3s (1170 modules)
+ ✓ Compiled in 1456ms (444 modules)
+ GET /api/notifications 200 in 4732ms
+ GET /api/doctors? 200 in 5169ms
+ GET /api/doctors? 200 in 5175ms
+ GET /dashboard/specialists 200 in 3978ms
+ GET /api/doctors 200 in 270ms
+ GET /api/doctors 200 in 363ms
+ GET /api/notifications 200 in 399ms
+ ○ Compiling /dashboard/services ...
+ ✓ Compiled /dashboard/services in 1785ms (1190 modules)
+ GET /dashboard/services 200 in 2239ms
+ GET /dashboard/services 200 in 195ms
+ GET /dashboard/services 200 in 134ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 198ms
+ GET /api/notifications 200 in 267ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 280ms
+ GET /dashboard/hospitals?service=PHARMACY 200 in 204ms
+ GET /api/hospitals/search?provider=places&service=PHARMACY&maxDistance=25&limit=30 200 in 216ms
+ GET /api/hospitals/search?provider=places&service=PHARMACY&maxDistance=25&limit=30 200 in 233ms
+ GET /api/user/saved 200 in 334ms
+ GET /api/notifications 200 in 486ms
+ GET /api/user/saved 200 in 484ms
+ GET /api/hospitals/search?provider=places&service=PHARMACY&lat=30.180937&lng=77.311467&maxDistance=25&limit=30 200 in 1331ms
+ ○ Compiling /dashboard/ai-assistant ...
+ ✓ Compiled /dashboard/ai-assistant in 6.6s (1930 modules)
+ GET /dashboard/ai-assistant 200 in 7418ms
+ GET /dashboard/ai-assistant 200 in 1224ms
+ GET /dashboard/ai-assistant 200 in 252ms
+ GET /api/notifications 200 in 383ms
+ ○ Compiling /api/ai/chat ...
+ ✓ Compiled /api/ai/chat in 6.9s (2316 modules)
+ POST /api/ai/chat 200 in 17812ms
+ POST /api/ai/chat 200 in 2668ms
+ POST /api/ai/chat 200 in 2713ms
+ POST /api/ai/chat 200 in 1669ms
+ POST /api/ai/chat 200 in 2670ms
+ POST /api/ai/chat 200 in 2737ms
+ GET /dashboard/ai-assistant 200 in 3785ms
+ ○ Compiling /api/auth/me ...
+ GET /api/notifications 200 in 1310ms
+ ✓ Compiled /api/auth/me in 6.8s (1106 modules)
+ ✓ Compiled /api/ai/chat in 1ms (1106 modules)
+ GET /api/notifications 200 in 9640ms
+ ✓ Compiled in 1ms (1496 modules)
+ GET /api/auth/me 200 in 13530ms
+ GET /api/auth/me 200 in 13076ms
+ POST /api/ai/chat 200 in 7703ms
+ POST /api/ai/chat 200 in 2743ms
+ POST /api/ai/chat 200 in 4038ms
+ ○ Compiling /dashboard/beds ...
+ ✓ Compiled /dashboard/beds in 13.1s (2337 modules)
+ GET /dashboard/beds 200 in 14895ms
+ ✓ Compiled in 2.1s (834 modules)
+ GET /dashboard/beds 200 in 917ms
+ GET /dashboard/ai-assistant 200 in 942ms
+ GET /dashboard/beds 200 in 220ms
+ GET /dashboard/ai-assistant 200 in 269ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard/notifications in 24s (1834 modules)
+ GET /dashboard/notifications 200 in 18220ms
+ GET /dashboard 200 in 28118ms
+ GET /dashboard/ai-assistant 200 in 22312ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 1431ms (1120 modules)
+ ✓ Compiled (1122 modules)
+ GET /api/auth/me 200 in 4955ms
+ GET /api/auth/me 200 in 4647ms
+ GET /api/notifications 200 in 4654ms
+ GET /api/notifications 200 in 5074ms
+ GET /dashboard/ai-assistant 200 in 2174ms
+ GET /api/auth/me 200 in 487ms
+ GET /api/auth/me 200 in 426ms
+ GET /api/notifications 200 in 516ms
+ GET /api/notifications 200 in 512ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 6.4s (1953 modules)
+ POST /api/auth/logout 200 in 7288ms
+ ○ Compiling / ...
+ GET /dashboard/ai-assistant 200 in 1168ms
+ ✓ Compiled / in 7.2s (2014 modules)
+ GET /dashboard/ai-assistant 200 in 7319ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 3.7s (2039 modules)
+ GET / 200 in 12576ms
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 4621ms
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 154ms
+ GET / 200 in 1084ms
+ ○ Compiling /hospitals ...
+ ✓ Compiled /hospitals in 11s (1914 modules)
+ GET /hospitals 200 in 15667ms
+ GET /hospitals 200 in 1133ms
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 621ms
+ ○ Compiling /api/user/saved ...
+ ✓ Compiled /api/user/saved in 11.7s (1163 modules)
+ ✓ Compiled (1165 modules)
+ GET /api/user/saved 401 in 19713ms
+ GET /api/user/saved 401 in 19701ms
+ GET /api/hospitals/search?limit=30 200 in 19768ms
+ GET /api/hospitals/search?limit=30 200 in 19870ms
+ GET /api/hospitals/search?limit=30 200 in 19510ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 6.6s (2044 modules)
+ GET /info/help 404 in 7887ms
+ GET /info/help 404 in 494ms
+ GET /info/help 404 in 2913ms
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 3143ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 3s (1162 modules)
+ GET /api/auth/me 200 in 4734ms
+ GET /hospitals 200 in 3699ms
+ GET /hospitals 200 in 543ms
+ GET /api/user/saved 401 in 836ms
+ GET /api/hospitals/search?limit=30 200 in 846ms
+ GET /api/hospitals/search?limit=30 200 in 890ms
+ GET /api/user/saved 401 in 852ms
+ GET /api/hospitals/search?limit=30 200 in 518ms
+ ○ Compiling /hospitals/[id] ...
+ ✓ Compiled /hospitals/[id] in 9s (2086 modules)
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 290ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 23540ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 309ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 227ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 233ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 267ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 294ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 247ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 245ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 239ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 227ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 237ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 301ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 282ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 243ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 2116ms
+ GET /hospitals/cmt4myxjm004l9pigj1bpjlmr 200 in 2852ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 5.9s (1187 modules)
+ POST /api/auth/logout 200 in 6813ms
+ GET / 200 in 1277ms
+ GET /login 200 in 190ms
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 9.6s (2073 modules)
+ POST /api/auth/login 200 in 12410ms
+ ○ Compiling /api/auth/me ...
+ GET /login 200 in 3178ms
+ GET /login?next=%2Fdashboard%2Fai-assistant&reason=auth 200 in 2221ms
+ ✓ Compiled /api/auth/me in 2.2s (1182 modules)
+ GET /api/auth/me 200 in 2689ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 3.2s (1190 modules)
+ GET /dashboard 200 in 3656ms
+ GET /dashboard 200 in 303ms
+ ○ Compiling /api/dashboard ...
+ ✓ Compiled /api/dashboard in 2.7s (1192 modules)
+ ✓ Compiled in 3.6s (893 modules)
+ GET /api/notifications 200 in 8033ms
+ GET /api/notifications 200 in 8035ms
+ GET /api/dashboard 200 in 8105ms
+ GET /api/dashboard 200 in 8108ms
+ GET /dashboard 200 in 483ms
+ GET /dashboard/ai-assistant 200 in 446ms
+ GET /api/notifications 200 in 101ms
+ GET /api/notifications 200 in 120ms
+ ○ Compiling /dashboard/hospitals ...
+ ✓ Compiled /dashboard/hospitals in 3.4s (1232 modules)
+ GET /dashboard/hospitals 200 in 4249ms
+ GET /dashboard/ai-assistant 200 in 9830ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 5.4s (1137 modules)
+ POST /api/auth/logout 200 in 6551ms
+ POST /api/auth/logout 200 in 1484ms
+ ○ Compiling / ...
+ ✓ Compiled / in 993ms (1186 modules)
+ GET / 200 in 2510ms
+ GET / 200 in 688ms
+ GET / 200 in 1564ms
+ GET / 200 in 912ms
+ GET / 200 in 8675ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 7.8s (1172 modules)
+ GET /api/auth/me 200 in 8420ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1810ms (1186 modules)
+ GET /login 200 in 2680ms
+ GET /login 200 in 198ms
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 12.1s (1162 modules)
+ POST /api/auth/login 200 in 14225ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 1433ms (1164 modules)
+ GET /api/auth/me 200 in 1883ms
+ GET /dashboard 200 in 710ms
+ GET /dashboard 200 in 332ms
+ ○ Compiling /api/dashboard ...
+ ✓ Compiled /api/dashboard in 4.4s (1166 modules)
+ ✓ Compiled (1169 modules)
+ GET /api/notifications 200 in 9472ms
+ GET /api/dashboard 200 in 9495ms
+ GET /api/notifications 200 in 202ms
+ GET /api/dashboard 200 in 265ms
+ GET /dashboard 200 in 7010ms
+ GET /api/auth/me 200 in 1404ms
+ GET /api/dashboard 200 in 1459ms
+ GET /api/notifications 200 in 1460ms
+ ○ Compiling /dashboard/hospitals ...
+ ✓ Compiled /dashboard/hospitals in 15.1s (1217 modules)
+ GET /dashboard/hospitals 200 in 16220ms
+ GET /dashboard/hospitals 200 in 202ms
+ GET /dashboard/hospitals 200 in 208ms
+ GET /dashboard/hospitals 200 in 170ms
+ GET /dashboard/hospitals 200 in 149ms
+ ○ Compiling /api/user/saved ...
+ ✓ Compiled /api/user/saved in 4.9s (1221 modules)
+ ✓ Compiled (1223 modules)
+ GET /api/user/saved 200 in 7754ms
+ GET /api/notifications 200 in 7795ms
+ GET /api/user/saved 200 in 168ms
+ GET /api/hospitals/search?provider=places&lat=30.180937&lng=77.311467&maxDistance=25&limit=30 200 in 9538ms
+ ○ Compiling /dashboard/doctors ...
+ ✓ Compiled /dashboard/doctors in 2.6s (1181 modules)
+ GET /dashboard/doctors 200 in 3695ms
+ GET /dashboard/hospitals 200 in 263ms
+ GET /api/hospitals/search?provider=places&lat=30.250579086939325&lng=77.04383959992398&maxDistance=25&limit=30 200 in 1609ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 2.5s (1179 modules)
+ POST /api/auth/logout 200 in 3117ms
+ POST /api/auth/logout 200 in 347ms
+ GET / 200 in 5322ms
+ GET / 200 in 1464ms
+ GET / 200 in 974ms
+ GET / 200 in 751ms
+ GET / 200 in 7831ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 12.7s (1161 modules)
+ GET /api/auth/me 200 in 14179ms
+ GET /login 200 in 4278ms
+ GET /login 200 in 541ms
+ ○ Compiling /signup ...
+ ✓ Compiled /api/auth/login in 20.2s (2065 modules)
+ GET /signup?next=%2Fdashboard 200 in 22989ms
+ POST /api/auth/login 200 in 10592ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 1345ms (1170 modules)
+ GET /api/auth/me 200 in 1717ms
+ GET /dashboard 200 in 380ms
+ GET /dashboard 200 in 218ms
+ ○ Compiling /api/notifications ...
+ ✓ Compiled /api/notifications in 3.8s (1174 modules)
+ ✓ Compiled (1176 modules)
+ GET /api/notifications 200 in 7904ms
+ GET /api/dashboard 200 in 8002ms
+ GET /api/notifications 200 in 192ms
+ GET /api/dashboard 200 in 192ms
+ GET /dashboard/hospitals 200 in 324ms
+ GET /api/notifications 200 in 377ms
+ ○ Compiling /api/hospitals/search ...
+ ✓ Compiled /api/hospitals/search in 3.3s (1178 modules)
+ ✓ Compiled (1182 modules)
+ GET /api/user/saved 200 in 6972ms
+ GET /api/user/saved 200 in 107ms
+ GET /api/hospitals/search?provider=places&lat=30.250579086939325&lng=77.04383959992398&maxDistance=25&limit=30 200 in 8240ms
+ GET /api/hospitals/search?provider=places&lat=30.250579086939325&lng=77.04383959992398&maxDistance=26&limit=30 200 in 265ms
+ GET /api/hospitals/search?provider=places&lat=30.250579086939325&lng=77.04383959992398&maxDistance=49&limit=30 200 in 8792ms
+ GET /api/hospitals/search?provider=places&lat=30.250579086939325&lng=77.04383959992398&maxDistance=25&limit=30 200 in 3200ms
+ ○ Compiling /dashboard/doctors ...
+ ✓ Compiled /dashboard/doctors in 6s (1179 modules)
+ GET /dashboard/doctors 200 in 7186ms
+ GET /dashboard/doctors 200 in 396ms
+ GET /dashboard/doctors 200 in 489ms
+ ○ Compiling /api/doctors ...
+ ✓ Compiled /api/doctors in 2.6s (1181 modules)
+ GET /api/doctors? 200 in 5955ms
+ GET /api/notifications 200 in 5960ms
+ GET /api/doctors? 200 in 309ms
+ ○ Compiling /dashboard/specialists ...
+ ✓ Compiled /dashboard/specialists in 1528ms (1183 modules)
+ GET /dashboard/specialists 200 in 2250ms
+ GET /dashboard/specialists 200 in 276ms
+ GET /dashboard/specialists 200 in 205ms
+ GET /api/doctors 200 in 519ms
+ GET /api/notifications 200 in 555ms
+ GET /api/doctors 200 in 150ms
+ GET /dashboard/doctors?specialty=NEUROLOGY 200 in 183ms
+ GET /api/doctors?specialty=NEUROLOGY 200 in 172ms
+ GET /api/notifications 200 in 171ms
+ GET /api/doctors?specialty=NEUROLOGY 200 in 102ms
+ GET /dashboard/specialists 200 in 127ms
+ GET /api/notifications 200 in 290ms
+ GET /api/doctors 200 in 369ms
+ GET /api/doctors 200 in 154ms
+ ○ Compiling /dashboard/services ...
+ ✓ Compiled /dashboard/services in 1144ms (1189 modules)
+ GET /dashboard/services 200 in 1528ms
+ GET /dashboard/services 200 in 159ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 480ms
+ GET /api/notifications 200 in 485ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 116ms
+ GET /dashboard/hospitals?service=CT_SCAN 200 in 242ms
+ ○ Compiling /api/user/saved ...
+ ✓ Compiled /api/user/saved in 1259ms (1191 modules)
+ GET /api/user/saved 200 in 7975ms
+ GET /api/notifications 200 in 8007ms
+ GET /api/user/saved 200 in 160ms
+ GET /api/hospitals/search?provider=places&service=CT_SCAN&lat=30.250579086939325&lng=77.04383959992398&maxDistance=25&limit=30 200 in 9055ms
+ ○ Compiling /dashboard/compare ...
+ ✓ Compiled /dashboard/compare in 13.1s (2097 modules)
+ GET /dashboard/compare?ids=gplaces_ChIJNwPfliytDzkRMdxOGOnhmoY%2Cgplaces_ChIJyyLCYNOtDzkRsXEck1fopNo 200 in 14415ms
+ ✓ Compiled in 2.1s (900 modules)
+ GET /api/user/saved 200 in 530ms
+ ○ Compiling /api/hospitals/[id] ...
+ ✓ Compiled /api/hospitals/[id] in 4.9s (2099 modules)
+ GET /api/notifications 200 in 5286ms
+ GET /api/user/saved 200 in 4966ms
+ GET /api/hospitals/gplaces_ChIJNwPfliytDzkRMdxOGOnhmoY 200 in 3157ms
+ GET /api/hospitals/gplaces_ChIJyyLCYNOtDzkRsXEck1fopNo 200 in 3167ms
+ GET /api/hospitals/gplaces_ChIJNwPfliytDzkRMdxOGOnhmoY 200 in 23315ms
+ GET /api/hospitals/gplaces_ChIJyyLCYNOtDzkRsXEck1fopNo 200 in 23484ms
+ GET /dashboard/ai-assistant 200 in 522ms
+ GET /dashboard/ai-assistant 200 in 147ms
+ GET /api/notifications 200 in 232ms
+ ○ Compiling /api/ai/chat ...
+ ✓ Compiled /api/ai/chat in 12.8s (1553 modules)
+ POST /api/ai/chat 200 in 29311ms
+ ○ Compiling /dashboard/saved ...
+ ✓ Compiled /dashboard/profile in 21.6s (1942 modules)
+ GET /dashboard/profile 200 in 17213ms
+ GET /dashboard/saved 200 in 22832ms
+ ○ Compiling /api/user/profile ...
+ ✓ Compiled /api/user/profile in 1729ms (1176 modules)
+ ✓ Compiled in 2.6s (909 modules)
+ GET /api/user/profile 200 in 7270ms
+ GET /api/notifications 200 in 7242ms
+ GET /api/user/profile 200 in 124ms
+ PATCH /api/user/profile 200 in 442ms
+ ○ Compiling /dashboard/notifications ...
+ ✓ Compiled /dashboard/notifications in 11s (1169 modules)
+ GET /dashboard/notifications 200 in 11813ms
+ GET /dashboard/notifications 200 in 917ms
+ GET /dashboard/notifications 200 in 301ms
+ ○ Compiling /api/notifications ...
+ ✓ Compiled /api/notifications in 1715ms (1171 modules)
+ GET /api/notifications 200 in 2911ms
+ GET /api/notifications 200 in 367ms
+ GET /api/notifications 200 in 224ms
+ GET /dashboard 200 in 605ms
+ GET /dashboard 200 in 129ms
+ GET /api/notifications 200 in 309ms
+ ○ Compiling /api/dashboard ...
+ ✓ Compiled /dashboard/doctors in 11.4s (1175 modules)
+ ✓ Compiled /dashboard/beds in 2ms (1183 modules)
+ ✓ Compiled in 2ms (1190 modules)
+ ✓ Compiled in 3ms (1190 modules)
+ GET /api/dashboard 200 in 13702ms
+ GET /api/dashboard 200 in 34092ms
+ ✓ Compiled in 1ms (1190 modules)
+ GET /dashboard/doctors 200 in 27464ms
+ GET /dashboard/beds 200 in 19068ms
+ GET /dashboard/beds 200 in 357ms
+ GET /dashboard/beds 200 in 358ms
+ ○ Compiling /api/hospitals/search ...
+ ✓ Compiled /api/hospitals/search in 6s (1194 modules)
+ GET /api/notifications 200 in 9452ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 9549ms
+ GET /api/hospitals/search?maxDistance=100&limit=50 200 in 138ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 12.3s (1161 modules)
+ POST /api/auth/logout 200 in 3372ms
+ POST /api/auth/logout 200 in 13561ms
+ POST /api/auth/logout 200 in 282ms
+ GET / 200 in 3301ms
+ GET / 200 in 2181ms
+ GET / 200 in 1896ms
+ GET / 200 in 1630ms
+ GET / 200 in 974ms
+ GET / 200 in 839ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 9s (1168 modules)
+ GET /signup 200 in 9500ms
+ GET /login 200 in 595ms
+ ○ Compiling /api/auth/login ...
+ ✓ Compiled /api/auth/login in 7.1s (1161 modules)
+ POST /api/auth/login 200 in 8580ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 3.3s (1163 modules)
+ GET /api/auth/me 200 in 3563ms
+ GET /dashboard 200 in 442ms
+ GET /dashboard 200 in 463ms
+ ○ Compiling /api/dashboard ...
+ ✓ Compiled /api/dashboard in 3.9s (1165 modules)
+ ✓ Compiled (1169 modules)
+ GET /api/notifications 200 in 8659ms
+ GET /api/dashboard 200 in 8678ms
+ GET /api/notifications 200 in 301ms
+ GET /api/dashboard 200 in 328ms
+ GET /dashboard/hospitals 200 in 698ms
+ ○ Compiling /api/user/saved ...
+ ✓ Compiled /api/user/saved in 16.1s (1165 modules)
+ ✓ Compiled (1169 modules)
+ GET /api/user/saved 200 in 20701ms
+ GET /api/notifications 200 in 20737ms
+ GET /api/user/saved 200 in 198ms
+ GET /api/hospitals/search?provider=places&lat=30.250569025168915&lng=77.04385430489123&maxDistance=25&limit=30 200 in 9376ms
+ ○ Compiling /dashboard/compare ...
+ ✓ Compiled /dashboard/compare in 14.7s (1038 modules)
+ GET /dashboard/compare?ids=gplaces_ChIJyyLCYNOtDzkRsXEck1fopNo%2Cgplaces_ChIJNwPfliytDzkRMdxOGOnhmoY 200 in 16176ms
+ ○ Compiling /api/hospitals/[id] ...
+ ✓ Compiled /api/hospitals/[id] in 2.1s (1167 modules)
+ ✓ Compiled (1173 modules)
+ GET /api/user/saved 200 in 6291ms
+ GET /api/notifications 200 in 6370ms
+ GET /api/user/saved 200 in 200ms
+ GET /api/hospitals/gplaces_ChIJyyLCYNOtDzkRsXEck1fopNo 200 in 7170ms
+ GET /api/hospitals/gplaces_ChIJNwPfliytDzkRMdxOGOnhmoY 200 in 7384ms
+ GET /api/hospitals/gplaces_ChIJyyLCYNOtDzkRsXEck1fopNo 200 in 602ms
+ GET /api/hospitals/gplaces_ChIJNwPfliytDzkRMdxOGOnhmoY 200 in 1006ms
+ GET /dashboard 200 in 21651ms
+[?25h

@@ -1,0 +1,45 @@
+
+> jeevan-sahay@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use by process 11648, using available port 3001 instead.
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.56.1:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 9.8s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1085ms (195 modules)
+ ○ Compiling /login ...
+ ✓ Compiled /login in 5.2s (810 modules)
+ GET /login?next=%2Fdashboard&reason=auth 200 in 7777ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.2s (882 modules)
+ GET / 200 in 5511ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 6.9s (915 modules)
+ GET /dashboard 200 in 9227ms
+ ○ Compiling /api/notifications ...
+ ✓ Compiled /api/notifications in 5.1s (1042 modules)
+ GET /api/auth/me 200 in 6456ms
+ GET /api/notifications 200 in 6804ms
+ GET /api/dashboard 200 in 6926ms
+ ○ Compiling /api/auth/logout ...
+ ✓ Compiled /api/auth/logout in 1007ms (1044 modules)
+ POST /api/auth/logout 200 in 1298ms
+ ○ Compiling / ...
+ ✓ Compiled / in 880ms (713 modules)
+ GET / 200 in 1804ms
+ GET / 200 in 525ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1272ms (729 modules)
+ GET /login 200 in 1648ms
+ GET /login 200 in 6571ms
+ ✓ Compiled in 10.5s (1186 modules)
+ ✓ Compiled in 3.1s (1172 modules)
+ ✓ Compiled in 3.5s (991 modules)
+ ✓ Compiled in 2.8s (991 modules)
+ ✓ Compiled in 1379ms (399 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\cache\webpack\server-development\42.pack.gz_' -> 'C:\Users\rs226\OneDrive\문서\Desktop\Jeevan Sahay\.next\cache\webpack\server-development\42.pack.gz'

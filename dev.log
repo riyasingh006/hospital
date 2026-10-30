@@ -1,0 +1,28 @@
+
+> jeevan-sahay@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 10.2s
+ ○ Compiling /api/doctors ...
+ ✓ Compiled /api/doctors in 2.8s (412 modules)
+ GET /api/doctors 200 in 4618ms
+ GET /api/doctors?q=Vikram%20Sethi 200 in 131ms
+ GET /api/doctors?specialty=CARDIOLOGY 200 in 125ms
+ GET /api/doctors?city=Delhi 200 in 127ms
+ GET /api/doctors?q=vikram&specialty=NEUROLOGY&city=Ghaziabad 200 in 90ms
+ GET /api/doctors?q=Zzzz 200 in 89ms
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1568ms (195 modules)
+ ○ Compiling /login ...
+ ✓ Compiled /login in 4.8s (939 modules)
+ GET /login?next=%2Fdashboard%2Fdoctors&reason=auth 200 in 6380ms
+ ○ Compiling /api/auth/me ...
+ ✓ Compiled /api/auth/me in 7s (955 modules)
+ GET /api/auth/me 200 in 7488ms
+ GET /login?next=%2Fdashboard%2Fdoctors&reason=auth 200 in 754ms
